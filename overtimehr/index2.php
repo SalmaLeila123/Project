@@ -192,7 +192,6 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
         echo "<td>".$user_data['jam_lembur']."</td>";
         echo "<td>".$user_data['hari_lk']."</td>";  
         echo "<td>".$user_data['total_tuul']."</td>";
-        
 
         echo "<td><a href='edit.php?npk=$user_data[npk]'>Edit</a> | <a href='delete.php?id=$user_data[id]'>Delete</a></td></tr>";        
     }
