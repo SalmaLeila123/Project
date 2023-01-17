@@ -88,20 +88,15 @@ if (isset($_POST['hapus'])) {
 </head>
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">HR/GA</a>
-      
+        <a class="navbar-brand" href="index.html">Data Overtime</a>
+       
         <!-- Navbar Search-->
         <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
         </form>
         <!-- Navbar-->
         <ul class="navbar-nav ml-auto ml-md-0">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
-                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                 
-                    
-                    <a class="dropdown-item" href="logout.php">Logout</a>
-                </div>
+              
             </li>
         </ul>
     </nav>
@@ -115,15 +110,11 @@ if (isset($_POST['hapus'])) {
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Dashboard
                         </a>
-                       
-                       
-                     
                         <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
                                 <a class="nav-link" href="tambahdata.php">Tambah Data Karyawan</a>
                             </nav>
                         </div>
-                       
                     </div>
                 </div>
                 <div class="sb-sidenav-footer">
@@ -198,5 +189,5 @@ $result = mysqli_query($mysqli, "SELECT * FROM users ORDER BY id DESC");
     }
     ?>
     </table>
-
+</body>
 </html>
